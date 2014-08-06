@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+    {% block extra_head_css %}
+        <link rel="text/stylesheet" href="http://174.140.227.137/static/css/style.css" />
+    {% endblock extra_head_css %}
+    {% block header %}
+        {% include '_header.html' %}
+    {% endblock header %}
+    {% block left_sidebar %}
+        <div class="left-side">
+            <p>This should be left sidebar</p>
+        </div>
+    {% endblock left_sidebar %}
+    {% block body %}
+        <div class="body">
+            <p>This is the body text</p>
+        </div>
+    {% endblock body %}
+    {% block content %}
+        <div class="main-content">
+            <h2>Main content</h2>
+            {% if data %}
+            <p>{{ data }}</p>
+            {% endif %}
+        </div>
+    {% endblock content %}
+    {% block right_sidebar %}
+        <div class="right-side">
+            <h3>right</h3>
+        </div>
+    {% endblock right_sidebar %}
+    {% block footer %}
+        <p>Footer</p>
+    {% endblock footer %}
+
+
+

@@ -1,0 +1,41 @@
+/*.header {
+    text-align:center;
+    width:101%;
+    height:80px;
+    background-color:grey;
+    color:white;
+    margin-top:-21px;
+    margin-left:-8px;
+}
+*/
+.left-side {
+    float:left;
+    margin-top:-16px;
+    margin-left:-8px;
+}
+.right-side {
+    float:right;
+    margin-top:-103px;
+    margin-right:-8px;
+}
+.left-side,
+.right-side {
+    height: 651px;
+    width: 100px;
+    border:2px solid black;
+}
+
+.body,
+.main-content {
+    text-align:center;
+}
+
+.footer {
+    text-align:left;
+    vertical-align:bottom;
+    position:relative;
+    top:550px;
+    width:100%;
+    border-top:2px solid black;
+
+}

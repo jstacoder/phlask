@@ -1,0 +1,17 @@
+<p>Hello, {{ name }} you loser!</p>
+
+<br />
+<ul>
+    {% for k,v in _context %}
+        {% if k == '_parent' %}
+            {% for x,y in v %}
+                <li>{{x}} =><br />{{y}}</li>
+            {% endfor %}
+        {% endif %}
+        <li>{{k}} => <br />{{v}}</li>
+    {% endfor %}
+</ul
+        
+{{ _context }}
+{% set name = 'hank' %}
+{{ name }}
