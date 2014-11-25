@@ -10,6 +10,14 @@ function index($app)
     ));
 }
 
+function about($app)
+{
+    return $app->render(
+        'about.html'
+    );
+}
+
+$app->route('/about',about);
 $app->route('/',index);
 
 $app->run();
